@@ -1,0 +1,367 @@
+@font-face {
+    font-family: 'knewaveregular';
+    src: url('../font/knewave-webfont.woff2') format('woff2'),
+    url('../font/knewave-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ********************************************************
+                    Elodie, footer
+            faire variables couleurs avec chartes
+******************************************************** */
+:root{
+  --darkBrown:#4e342e;
+  --caramel:#8F4509;
+  --blue:#3d5a98;
+  --darkGrey:#737373;
+  --grey:#d9d9d9;
+}
+body{
+    padding:0;
+    margin:0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.navCat{
+  /*Elodie : la navbar concerne le header, j'ai juste placé et coloré */
+  height: 9vh;
+  width: 100%;
+  background-color:var(--darkBrown);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.categorieForm{
+  /* Elodie : concerne le formulaire (catégories) */
+    width: 65%;
+    height: 5vh;
+    background-color: var(--grey);
+    margin-top: 6vh;
+    z-index: 999;
+}
+
+.main{
+  /* Elodie: Juste la taille du main pour que mes nav et footer soient bien placées */
+  width: 100%;
+  height: 82vh;
+  margin-top: 20vh!important;
+}
+
+/*correct footer Ken*/
+footer{
+    width: 100%;
+}
+
+
+/* ******************************************************************
+      Fin du CSS d'Elodie sur le footer, la nav et le header
+                  (juste taille et couleur)
+****************************************************************** */
+
+/* **************************************
+    Elo : commencement css galerie
+************************************** */
+.main_galerie{
+    margin-top: 5vh;
+    margin-bottom: 10vh !important;
+}
+
+.perso{
+  background-color:var(--grey);
+    color: black;
+}
+
+.button{
+  background-color: var(--blue);
+}
+
+.container.main_product{
+  margin-top: 10vh;
+    padding: 1vmax;
+}
+/* **************************************
+    Elo : fin css
+************************************** */
+/***************************************
+           Hamadi
+ */
+
+
+.owl-item {
+    height: 80vh;
+}
+
+.owl-item > div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.entete{
+  background-color: #4a3332;
+  width:100%;
+  height:9vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around ;
+  align-items: center;
+  margin-top:0;
+}
+
+/*why?*/
+.t2{
+  position: absolute;
+  left : 50%;
+  bottom:0%;
+  color:white;
+  font-size : 30px;
+}
+
+.t3{
+  position: absolute;
+  left : 50%;
+  bottom:0%;
+  color:white;
+  font-size : 30px;
+}
+
+.t4{
+  position: absolute;
+  left : 50%;
+  bottom:0%;
+  color:white;
+  font-size : 30px;
+}
+
+.t5{
+  position: absolute;
+  left : 50%;
+  bottom:0%;
+  color:white;
+  font-size : 30px;
+}
+
+.t6{
+  position: absolute;
+  left : 50%;
+  bottom:0%;
+  color:white;
+  font-size : 30px;
+}
+/*endwhy*/
+
+.owl-prev{
+    color:black !important;
+    transform:scale(7);
+    position: absolute;
+    left:2%;
+    top: 50%;
+}
+
+.owl-next{
+    color:black !important;
+    transform:scale(7);
+    position: absolute;
+    right:2%;
+    top: 50%;
+}
+
+.owl-dots{
+  display: none;
+}
+
+/* ********************************************************
+                    Flavian, page connexion
+******************************************************** */
+
+body {
+	margin: 0;
+	padding: 0;
+}
+.divConnexion {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content {
+	display: none;
+}
+.active {
+	display: block;
+}
+.formConnexion {
+	display: flex;
+	flex-direction: column;	
+	align-items: center;
+}
+li {
+	list-style-type: none;
+}
+.inputFormulaireConnexion {
+	margin-bottom: 2vw;
+	border-top: 0px solid transparent;
+	border-left: 0px solid transparent;
+	border-right: 0px solid transparent;
+	border-bottom: 4px solid #3d5a98;
+	width: 20vw;
+}
+.boutonFormulaireConnexion {
+	margin-top: 6vh;
+	width: 10vw;
+	border-top-right-radius: 25% 50%;
+	border-bottom-right-radius: 25% 50%;
+	border-top-left-radius: 25% 50%;
+	border-bottom-left-radius: 25% 50%;
+	background-color: #8F4509;
+	height: 6vh;
+	color: white;
+}
+::-webkit-input-placeholder {
+   color: #3d5a98;
+}
+img.profil-img {
+	height: 20vh !important;
+	border-radius: 50%;
+}
+
+
+/**********************************************************************************************************************
+                                       CSS KEN
+ *********************************************************************************************************************/
+/* Correction css hamadi */
+.carousel {
+    height: 80vh !important;
+    margin-top: 1vmax;
+}
+
+.t1{
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    padding-left: 5vmax;
+    padding-right: 5vmax;
+    text-align: center;
+    left : 50%;
+    bottom:5%;
+    transform: translate(-50%);
+    z-index: 100;
+    color:white;
+    font-size : 30px;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+    background-color: rgba(255,255,255, 0) !important;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+    color:var(--blue) !important;
+}
+
+.input-field{
+    margin-top: 0 !important;
+}
+
+.logo{
+    position: absolute;
+    top : 0%;
+    left : 5%;
+}
+
+#connexion{
+    position: absolute;
+    top:0;
+    right: 5%;
+}
+
+.navigation{
+    position: absolute;
+    top:-11px;
+    left: -45vw;
+}
+
+.card_voiture {
+    margin-bottom: 2.5vmax !important;
+}
+
+
+.card-title{
+    color: var(--blue);
+    font-size: large !important;
+    font-weight: bold !important;
+}
+
+footer.row{
+    margin-bottom: 0 !important;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/*
+Css Admin
+ */
+.main_admin{
+    width: 100%;
+    margin-top: 1vmax;
+}
+
+.admin_panel{
+    background-color: var(--blue);
+    height: 110%;
+    margin-right: 0.8vmax;
+}
+
+.menu_admin>li{
+    font-size: 2vmax;
+    margin-bottom: 1vmax;
+    margin-top: 2vmax;
+}
+
+.menu_admin>li>a{
+    color: white !important;
+}
+
+.menu_admin>li>a:hover{
+    color: black !important;
+    transition: 0.5s;
+}
+
+/*
+CSS DES BOUTONS
+ */
+
+.btn {
+    background-color:rgba(0,0,0,0);
+    margin: 0.2vmax;
+}
+
+.btn:hover{
+    background-color: var(--blue);
+}
+
+.btn_rechercher, .btn_admin{
+    margin: 0;
+    height: 2vmax;
+    color:black !important;
+}
+.btn_rechercher:hover, .btn_admin:hover {
+    color:white !important;
+    transition: 0.5s;
+}
+
+.main_inscription{
+    width: 100%;
+    margin-top: 5vmax;
+}
+
+.form_inscription{
+    padding: 1vmax;
+    padding-top: 0;
+}
