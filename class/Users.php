@@ -42,7 +42,7 @@ class Users extends Database {
         }
     }
     public function infoUsers($info) {
-        if (preg_match("#^[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,5}$#",$info)) {
+        if (preg_match("#^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$#",$info)) {
             $info = 'mail="'.$info.'"';
         }
         else {
